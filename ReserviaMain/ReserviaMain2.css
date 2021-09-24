@@ -4,7 +4,7 @@ label {
     font: 1rem
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
     /*Body*/
     body {
         background-color: #FFFF;
@@ -13,6 +13,7 @@ label {
         font-family: "raleway", verdana, sans-serif;
         margin: auto;
         flex-flow: wrap;
+        width: 100%;
     }
     .main-body {
         margin: auto
@@ -89,7 +90,6 @@ label {
         border: 1px solid #f2f2f2;
         background-color: #f2f2f2;
         border-radius: 20px 0 0 20px;
-        padding: 10px;
     }
     #ville::placeholder {
         color: black;
@@ -100,7 +100,6 @@ label {
         color: white;
         border: 1px solid #0065fc;
         border-radius: 0 20px 20px 0;
-        padding: 0 30px 0 30px;
     }
     #research:hover {
         cursor: pointer;
@@ -111,7 +110,6 @@ label {
         background-color: #0065fc;
         color: white;
         border: 1px solid #0065fc;
-        padding: 0 10px 0 10px;
         border-radius: 10px;
         display: none;
     }
@@ -119,7 +117,7 @@ label {
     .filtres {
         display: flex;
         align-items: center;
-        margin: 30px 10px 0px 0px;
+        margin: 30px 0px 0px 0px;
         width: 100%;
     }
     .les_filtres {
@@ -168,15 +166,17 @@ label {
     }
     .info {
         display: flex;
-        align-items: center;
         width: 100%;
+        justify-content: space-between;
     }
     .info i {
         color: #0065fc;
-        margin-right: 15px;
-        border: 1px solid #f2f2f2;
-        padding: 40px 10px 20px 10px;
-        border-radius: 100px;
+        border-radius: 50px;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #FFFF;
+        padding: 20px 10px 40px 0px;
+        align-content: flex-start;
     }
     /*Hebergements*/
     /*Resultats Recherches*/
@@ -184,7 +184,7 @@ label {
         font-size: small;
         font-weight: bold;
         color: black;
-        padding: 40px 10px 50px 60px;
+        padding: 40px 10px 50px 55px;
     }
     .photo_hebergement a {
         text-decoration: none;
@@ -385,6 +385,7 @@ label {
         border-radius: 15px 15px 15px 15px;
         margin: 0px 0px 0px 0px;
         justify-content: space-around;
+        object-fit: cover;
     }
     .vignette-activites-1,
     .vignette-activites-4 {
@@ -400,6 +401,7 @@ label {
         border-radius: 15px 15px 15px 15px;
         background-color: white;
         margin-bottom: 0px;
+        object-fit: cover;
     }
     .vignette-activites-3 img,
     .vignette-activites-6 img {
@@ -408,6 +410,7 @@ label {
         border-radius: 15px 15px 15px 15px;
         background-color: white;
         margin-bottom: 0px;
+        object-fit: cover;
     }
     .vignette-activites-2,
     .vignette-activites-3,
@@ -478,9 +481,9 @@ label {
 /*-------------------------------- Media Queries ------------------------------------*/
 
 
-/*----- Écran  376px-768px -----*/
+/*----- Écran  460px-920px -----*/
 
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 460px) and (max-width: 1200px) {
     /*Body*/
     body {
         background-color: #FFFF;
@@ -610,7 +613,7 @@ label {
         font-size: x-small;
         font-weight: bold;
         color: black;
-        margin: 60px 5px 60px 0px;
+        margin: 60px 50px 60px 0px;
         padding: 10px 0px 10px 0px;
     }
     .filtres a {
@@ -659,7 +662,7 @@ label {
     }
     .info i {
         color: #0065fc;
-        border: 1px solid #f2f2f2;
+        border: 1px solid #ffff;
         padding: 10px 10px 10px 10px;
         border-radius: 50px;
     }
@@ -796,6 +799,7 @@ label {
         width: 100%;
         height: 120px;
         border-radius: 15px 15px 0 0;
+        object-fit: cover;
     }
     .descriptif_hebergement {
         border-radius: 15px;
@@ -933,9 +937,9 @@ label {
 /*-------------------------------- Media Queries ------------------------------------*/
 
 
-/*----- Écran max 375px -----*/
+/*----- Écran max 460px -----*/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 460px) {
     body {
         background-color: #FFFF;
         Margin: 0 10px 0;
@@ -943,6 +947,7 @@ label {
         font-family: "raleway", verdana, sans-serif;
         margin: auto;
         flex-flow: wrap;
+        width: 100%;
     }
     .main-body {
         margin: auto
@@ -958,23 +963,27 @@ label {
     header {
         display: flex;
         justify-content: space-between;
-        width: 100%
+        width: 90%
     }
     header h4 {
         font-size: x-small;
         font-weight: normal;
-        margin: 5px 30px 5px 50px;
     }
     .header-nav-ul2 h4 {
         color: #0065fc;
+        margin: 5px 15px 5px 30px;
+    }
+    .header-nav-ul1 {
+        width: 90%
     }
     .header-nav-li h4 {
         color: black;
+        margin: 5px 70px 5px 30px;
     }
     header img {
         position: absolute;
         top: 20px;
-        left: 20px;
+        left: 15px;
     }
     .header-nav-li-s_inscrire {
         position: absolute;
@@ -1002,18 +1011,24 @@ label {
         display: flex;
         margin-top: 20px;
         margin: 0px 15px 0px 15px;
-        width: 100%;
+        width: 90%;
     }
     div h6 {
         font-size: medium;
         font-weight: bold;
         color: black;
         margin: 0px 30px 0px 15px;
+        width: 90%;
     }
     div h3 {
         font-size: x-small;
         color: black;
         margin: 20px 30px 40px 15px;
+        width: 90%;
+    }
+    .barre-recherche {
+        width: 90%;
+        display: flex;
     }
     #form {
         display: flex;
@@ -1047,8 +1062,8 @@ label {
     }
     /*Filtres*/
     .filtres {
-        margin: 30px 10px 0px;
-        width: 100%;
+        margin: 30px 0px 0px 15px;
+        width: 90%;
     }
     .les_filtres {
         display: flex;
@@ -1058,7 +1073,7 @@ label {
         font-size: x-small;
         font-weight: bold;
         color: black;
-        margin: 10px 5px 10px 5px;
+        margin: 10px 10px 10px 10px;
     }
     .icone h2 {
         font-size: x-small;
@@ -1096,6 +1111,7 @@ label {
     }
     .icone {
         padding: 5px 0px 5px 0px;
+        margin: 0px 12px 0px 0px;
     }
     .icone a:hover {
         text-shadow: 2px 2px 5px grey;
@@ -1113,7 +1129,7 @@ label {
     }
     .info i {
         color: #0065fc;
-        border: 1px solid #f2f2f2;
+        border: 1px solid #FFFF;
         padding: 10px 10px 10px 10px;
         border-radius: 50px;
     }
@@ -1138,7 +1154,7 @@ label {
         border: 1px solid #f2f2f2;
         background-color: #f2f2f2;
         width: 100%;
-        padding: 0px 20px 30px 20px;
+        padding: 0px 15px 30px 15px;
     }
     .titre_h7_pop {
         display: flex;
@@ -1147,15 +1163,19 @@ label {
         font-size: medium;
         font-weight: bold;
         color: black;
+        width: 100%;
     }
     .titre_h7_pop i {
         font-size: small;
         font-weight: bold;
         color: black;
-        padding: 0px 0px 15px 0px;
+        padding: 0px 15px 15px 0px;
     }
     .carte_populaire a {
         text-decoration: none;
+    }
+    .populaire {
+        padding: 0px 15px 0px 0px;
     }
     .populaire img {
         width: 130px;
@@ -1202,13 +1222,14 @@ label {
         font-size: medium;
         font-weight: bold;
         color: black;
-        padding: 50px 0px 0px 30px;
+        padding: 50px 0px 0px 20px;
+        width: 90%;
     }
     .block_hebergement_1,
     .block_hebergement_2 {
         display: flex;
         flex-direction: column;
-        padding: 10px 10px 0px 10px;
+        padding: 10px 10px 0px 0px;
     }
     .photo_hebergement a {
         text-decoration: none;
@@ -1268,7 +1289,7 @@ label {
         font-weight: bold;
         color: black;
         text-decoration: none;
-        margin: 20px 0px 20px 20px;
+        margin: 20px 20px 20px 20px;
     }
     .afficher a {
         text-decoration: none;
@@ -1278,20 +1299,23 @@ label {
         display: flex;
         flex-direction: column;
         margin-left: 0px;
-        padding: 0px 15px 30px 15px;
+        padding: 0px 20px 30px 20px;
+        width: 100%;
     }
     .titre_h7_activite {
-        padding: 30px 10px 30px 10px;
+        padding: 30px 0px 30px 0px;
         font-size: small;
         font-weight: bold;
         color: black;
+        width: 100%;
     }
     .activites-block h6,
     .activites-paysages h6 {
         font-size: x-small;
         font-weight: bold;
         color: black;
-        margin: 15px 5px 15px 10px;
+        margin: 15px 0px 15px 15px;
+        width: 100%;
     }
     .activites-block a,
     .activites-paysages a {
@@ -1303,6 +1327,7 @@ label {
         flex-flow: nowrap;
         list-style-type: none;
         flex-direction: column;
+        width: 100%;
     }
     .vignette-activites-2 img,
     .vignette-activites-3 img,
@@ -1315,6 +1340,7 @@ label {
         border-radius: 15px 15px 15px 15px;
         background-color: white;
         margin-bottom: 0px;
+        object-fit: cover;
     }
     .vignette-activites-1,
     .vignette-activites-4,
